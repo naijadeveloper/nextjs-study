@@ -1,13 +1,8 @@
-import Head from "next/head";
-
 const about: React.FC = () => {
   return (
-    <>
-      <Head>
-        <title>Hello about</title>
-      </Head>
+    <main>
       <div>About page</div>
-    </>
+    </main>
   );
 };
 
