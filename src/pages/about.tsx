@@ -1,9 +1,5 @@
 const about: React.FC = () => {
-  return (
-    <main>
-      <div>About page</div>
-    </main>
-  );
+  return <div>About page</div>;
 };
 
 export default about;
