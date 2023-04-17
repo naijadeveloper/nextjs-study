@@ -9,13 +9,13 @@ export default function Nav() {
       <ul className="flex w-[200px] justify-evenly">
         <Link
           href="/"
-          className="p-2 border-4 border-orange-900 hover:bg-orange-900"
+          className="p-2 border-4 border-orange-900 hover:bg-orange-900 rounded-md"
         >
           Home
         </Link>
         <Link
           href="/about"
-          className="p-2 border-4 border-purple-900 hover:bg-purple-900"
+          className="p-2 border-4 border-purple-900 hover:bg-purple-900 rounded-md"
         >
           About
         </Link>

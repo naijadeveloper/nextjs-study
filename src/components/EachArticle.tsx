@@ -1,3 +1,4 @@
+import Link from "next/link";
 import articleType from "@/types/articleType";
 
 export default function EachArticle({
@@ -6,8 +7,15 @@ export default function EachArticle({
   article: articleType;
 }) {
   return (
-    <div className="w-[300px] min-h-[200px] max-h-[350px] border border-red-600 bg-gray-900 p-2">
-      <h1 className="text-center uppercase text-lg">{title}</h1>
-    </div>
+    <Link
+      href="/article/[id]"
+      as={`/article/${id}`}
+      className="flex flex-col items-center justify-center border-2 border-transparent hover:border-red-600 bg-gray-900 p-2 rounded-md"
+    >
+      <h1 className="text-center uppercase text-lg underline underline-offset-4 decoration-purple-600 decoration-4">
+        {title.substring(0, 10)}
+      </h1>
+      <p>{body}</p>
+    </Link>
   );
 }
