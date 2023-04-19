@@ -1,5 +1,10 @@
-const about: React.FC = () => {
-  return <div>About page</div>;
-};
+import Meta from "@/components/Meta";
 
-export default about;
+export default function about() {
+  return (
+    <>
+      <Meta title="abouting" />
+      <div>About page</div>
+    </>
+  );
+}

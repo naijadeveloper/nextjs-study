@@ -1,8 +1,8 @@
 type articleType = {
-  body: string;
   readonly id: number;
   title: string;
-  userId: number;
+  excerpt: string;
+  body: string;
 };
 
 export default articleType;

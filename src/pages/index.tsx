@@ -1,10 +1,23 @@
 import type articleType from "../types/articleType";
 import EachArticle from "@/components/EachArticle";
 
+import { server } from "../../config";
+
+// export async function getStaticProps() {
+//   const res = await fetch(
+//     "https://jsonplaceholder.typicode.com/posts?_limit=5"
+//   );
+//   const articles = await res.json();
+
+//   return {
+//     props: {
+//       articles,
+//     },
+//   };
+// }
+
 export async function getStaticProps() {
-  const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_limit=5"
-  );
+  const res = await fetch(`${server}/api/articles`);
   const articles = await res.json();
 
   return {

@@ -2,7 +2,7 @@ import Link from "next/link";
 import articleType from "@/types/articleType";
 
 export default function EachArticle({
-  article: { body, id, title, userId },
+  article: { body, id, title },
 }: {
   article: articleType;
 }) {
