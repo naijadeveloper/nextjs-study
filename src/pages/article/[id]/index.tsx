@@ -41,10 +41,9 @@ import type articleType from "@/types/articleType";
 // }
 
 export const getStaticProps: GetStaticProps<
-  | {
-      article: articleType;
-    }
-  | { notFound: boolean }
+  {
+    article: articleType;
+  }
 > = async (context: GetStaticPropsContext) => {
   const res = await fetch(`${server}/api/articles/${context.params?.id}`);
 

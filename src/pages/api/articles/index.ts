@@ -1,4 +1,4 @@
-import { NextApiRequest as Req, NextApiResponse as Res } from "next";
+import type { NextApiRequest as Req, NextApiResponse as Res } from "next";
 //
 import { articleData } from "@/data/articleData1";
 
